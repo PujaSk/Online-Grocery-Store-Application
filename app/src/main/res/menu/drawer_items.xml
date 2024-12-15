@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/navViewUser"
+        android:title="View User"
+        android:icon="@drawable/ic_person"/>
+
+    <item
+        android:id="@+id/navViewOrders"
+        android:title="View Orders"
+        android:icon="@drawable/hs_order"/>
+
+    <item
+        android:id="@+id/navViewReports"
+        android:title="View Reports"
+        android:icon="@drawable/reports"/>
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/navLogOut"
+                android:title="Logout"
+                android:icon="@drawable/logout"/>
+        </menu>
+    </item>
+
+</menu>

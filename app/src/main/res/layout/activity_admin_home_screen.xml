@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFCFB"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.Admin_HomeScreen"
+    tools:openDrawer="start">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_background"
+                android:orientation="vertical">
+
+
+                <Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp">
+
+                    <ImageButton
+                        android:id="@+id/img_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:padding="5dp"
+                        android:src="@drawable/menu"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="24dp">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="44dp"
+                            android:text="Welcome"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADMIN"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/textView9"
+                            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </Toolbar>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.2"
+                android:paddingTop="120dp">
+
+                <Button
+                    android:id="@+id/ItemBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_background"
+                    android:text="Items" />
+
+                <Button
+                    android:id="@+id/CategoryBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="42dp"
+                    android:background="@drawable/button_background"
+                    android:text="Category" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.2"
+                android:paddingTop="50dp">
+
+                <Button
+                    android:id="@+id/ViewItemBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_background"
+                    android:text="View Items" />
+
+                <Button
+                    android:id="@+id/ViewCategoryBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="42dp"
+                    android:background="@drawable/button_background"
+                    android:text="View Category" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.2"
+                android:paddingTop="50dp">
+
+                <Button
+                    android:id="@+id/ViewReportBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/button_background"
+                    android:text="View Reports" />
+
+                <Button
+                    android:id="@+id/Admin_LogOut_Btn"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/button_background"
+                    android:text="LogOut" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+      <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#EBFCFB"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_items"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/grid_item_background">
+
+    <TextView
+        android:id="@+id/textBillId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Bill ID: #1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textUserId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="User ID: 101"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textTotalAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Total: Rs. 1000.00"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textBillDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2024-10-07"
+        android:textSize="14sp" />
+</LinearLayout>

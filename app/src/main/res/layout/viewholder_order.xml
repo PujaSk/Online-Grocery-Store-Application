@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Order ID -->
+    <TextView
+        android:id="@+id/orderIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Order ID: #12345"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Bill ID -->
+    <TextView
+        android:id="@+id/billIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bill ID: #67890"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/teal_dark"
+        app:layout_constraintTop_toBottomOf="@id/orderIdTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Order Date -->
+    <TextView
+        android:id="@+id/orderDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date: 2024-10-07"
+        android:textColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/billIdTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Item Name -->
+    <TextView
+        android:id="@+id/itemNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Item Name: Apple"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/orderDateTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Quantity -->
+    <TextView
+        android:id="@+id/orderQuantityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quantity: 2"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/itemNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/orderPriceTextView"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/orderPriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Price: Rs.100.00"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/itemNameTextView"
+        app:layout_constraintStart_toEndOf="@id/orderQuantityTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/orderTotalPriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs.200.00"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/teal_dark"
+        app:layout_constraintTop_toBottomOf="@id/orderPriceTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

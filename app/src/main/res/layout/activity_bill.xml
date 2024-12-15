@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFCFB">
+
+    <!-- Bill ID -->
+    <TextView
+        android:id="@+id/billIdTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bill ID: #12345"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center"/>
+
+    <!-- Bill Date -->
+    <TextView
+        android:id="@+id/billDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date: 2024-10-05"
+        android:textColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/billIdTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
+
+    <!-- RecyclerView for Ordered Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/billRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/billDateTextView"
+        app:layout_constraintBottom_toTopOf="@+id/totalAmountTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/totalAmountTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: Rs.400"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/teal_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

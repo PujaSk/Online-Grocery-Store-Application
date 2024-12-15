@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextUpdateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:hint="Item Name" />
+
+    <EditText
+        android:id="@+id/editTextUpdatePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Item Price" />
+
+    <EditText
+        android:id="@+id/editTextUpdateQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Item Quantity" />
+
+    <EditText
+        android:id="@+id/editTextUpdateCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category ID" />
+
+    <EditText
+        android:id="@+id/editTextUpdateDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+
+    <Button
+        android:id="@+id/buttonUpdateRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Record" />
+
+</LinearLayout>
